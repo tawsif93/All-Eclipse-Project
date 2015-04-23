@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="308.0" prefWidth="466.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FXMLHomePageController"> 
+   <children>
+      <Label contentDisplay="CENTER" layoutX="115.0" layoutY="29.0" prefHeight="60.0" prefWidth="236.0" text="Home Page" textAlignment="CENTER" textFill="#832c8a">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_insert" layoutX="152.0" layoutY="119.0" mnemonicParsing="false" onAction="#insertButtonHandler" prefHeight="25.0" prefWidth="158.0" text="Insert Task" />
+      <Button fx:id="btn_viewTask" layoutX="152.0" layoutY="167.0" mnemonicParsing="false" onAction="#viewTaskButtonHandler" prefHeight="25.0" prefWidth="158.0" text="View Task" />   
+   </children>
+</AnchorPane>

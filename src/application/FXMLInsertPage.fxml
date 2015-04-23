@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import jfxtras.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="329.0" prefWidth="529.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FXMLInsertPageController">
+	<children>
+		<Label layoutX="14.0" layoutY="35.0" prefHeight="15.0" prefWidth="42.0" text="Title " textAlignment="CENTER" />
+		<Label layoutX="13.0" layoutY="81.0" text="Location" textAlignment="CENTER" />
+		<Label layoutX="13.0" layoutY="122.0" text="Notes" />
+		<TextField fx:id="titleText" layoutX="91.0" layoutY="30.0" prefHeight="25.0" prefWidth="159.0" />
+		<TextField fx:id="locationText" layoutX="91.0" layoutY="76.0" prefHeight="25.0" prefWidth="159.0" />
+		<TextArea fx:id="notesText" layoutX="91.0" layoutY="124.0" prefHeight="145.0" prefWidth="159.0" />
+		<Label layoutX="284.0" layoutY="35.0" text="Date" />
+		<DatePicker fx:id="datePicker" layoutX="330.0" layoutY="31.0" prefHeight="25.0" prefWidth="170.0" />
+		<Label layoutX="293.0" layoutY="118.0" prefHeight="25.0" prefWidth="42.0" text="Hour" />
+		<Label layoutX="286.0" layoutY="140.0" prefHeight="25.0" prefWidth="63.0" text="Minutes" />
+		<LocalTimePicker fx:id="timePicker" layoutX="349.0" layoutY="76.0" prefHeight="133.0" prefWidth="142.0">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+		</LocalTimePicker>
+      <Button fx:id="btn_done" layoutX="347.0" layoutY="247.0" mnemonicParsing="false" onAction="#doneButtonHandler" prefHeight="47.0" prefWidth="109.0" text="Done ">
+         <font>
+            <Font name="M+ 1c heavy" size="18.0" />
+         </font>
+      </Button>
+	</children>
+</AnchorPane>
