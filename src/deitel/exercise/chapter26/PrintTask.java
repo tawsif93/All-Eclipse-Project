@@ -12,18 +12,21 @@ public class PrintTask implements Runnable {
 		// TODO Auto-generated constructor stub
 		TaskName = name ;
 		sleepTime = genarator.nextInt(5000) ;
+
 	}
 
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
 
-		try {
+		try
+		{
 			System.out.println(TaskName + " going to sleep for " + sleepTime
 					+ " miliseconds") ;
 			Thread.sleep(sleepTime) ;
 
-		} catch ( Exception e ) {
+		} catch ( Exception e )
+		{
 			// TODO: handle exception
 			System.out.println(TaskName
 					+ " terminated permanently due to Interuption") ;

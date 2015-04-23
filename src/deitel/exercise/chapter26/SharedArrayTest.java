@@ -31,7 +31,7 @@ public class SharedArrayTest {
 				System.out.println(sharedSimpleArray) ; // print contents
 			else
 				System.out
-						.println("Timed out while waiting for tasks to finish.") ;
+				.println("Timed out while waiting for tasks to finish.") ;
 		} catch ( InterruptedException exception )
 		{
 
