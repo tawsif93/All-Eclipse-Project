@@ -24,7 +24,7 @@ public class Consumer implements Runnable
 				Thread.sleep(genarator.nextInt(3000));
 				int value = SharedLocation.get();
 				sum+= value ;
-				System.out.printf("\t\t\t%2d\n" , sum );
+				System.out.printf("\t\t\t\t%2d\n" , sum );
 
 
 			} catch (InterruptedException e) {

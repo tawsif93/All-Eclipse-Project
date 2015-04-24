@@ -23,7 +23,7 @@ public class Producer implements Runnable{
 				Thread.sleep(genarator.nextInt(3000));
 				SharedLocation.set(count);
 				sum += count ;
-				System.out.printf("\t%2d\n" , sum);
+				System.out.printf("\t\t%2d\n" , sum);
 			
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
