@@ -1,3 +1,8 @@
+/AdditionApplet.html
+/DrawTest/
+/WelcomeApplet.html
+/com/
+/deitel/
 /AdditionApplet.class
 /CreateSequentialFile.class
 /CreateSequentialFileTest.class
@@ -6,7 +11,6 @@
 /CreditInquiry.class
 /CreditInquiryTest.class
 /DivideByZeroWithExceptionHandling.class
-/DrawTest/
 /FileDemonstration.class
 /FileDemonstrationGui.class
 /FileDemonstrationTest.class
@@ -21,5 +25,3 @@
 /UsingException.class
 /UsingExceptions.class
 /WelcomeApplet.class
-/com/
-/deitel/
