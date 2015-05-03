@@ -1,4 +1,4 @@
-package org.iit.algorithm ;
+package org.iit.algorithm.krushkal ;
 
 import java.util.HashMap ;
 import java.util.Map ;

@@ -1,6 +1,6 @@
-package org.iit.algorithm ;
+package org.iit.algorithm.heap ;
 
-public class HeapSortMain {
+public class MaxPriorityQueueTest {
 
 	public static void main( String[] args ) {
 		int[] a = { 3, 2, 19, 16, 17, 55 } ;

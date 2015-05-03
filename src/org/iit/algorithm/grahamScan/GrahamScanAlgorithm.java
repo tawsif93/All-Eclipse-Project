@@ -1,4 +1,4 @@
-package org.iit.algorithm ;
+package org.iit.algorithm.grahamScan ;
 
 import java.awt.Point ;
 import java.util.ArrayList ;

@@ -1,4 +1,4 @@
-package org.iit.algorithm ;
+package org.iit.algorithm.heap ;
 
 /**
  * Created by hp on 4/2/2015.

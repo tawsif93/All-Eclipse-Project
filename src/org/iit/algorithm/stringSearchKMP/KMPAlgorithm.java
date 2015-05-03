@@ -1,4 +1,4 @@
-package org.iit.algorithm ;
+package org.iit.algorithm.stringSearchKMP ;
 
 public class KMPAlgorithm {
 
