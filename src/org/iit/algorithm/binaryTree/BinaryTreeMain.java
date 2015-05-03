@@ -1,5 +1,6 @@
+package org.iit.algorithm.binaryTree ;
 
-public class MainApp {
+public class BinaryTreeMain {
 
 	public static void main(String[] args) {
 		Tree tree = new Tree() ;
