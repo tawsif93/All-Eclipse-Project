@@ -93,7 +93,7 @@ public class List <T>{
 		System.out.println();
 	}
 
-	private boolean isEmpty() {
+	public boolean isEmpty() {
 		// TODO Auto-generated method stub
 		if(firstNode == null) return true  ;
 
