@@ -8,7 +8,7 @@ package deitel.exercise.chapter22;
  * @param <T>
  *
  */
-public class Queue<T> {
+public class Queue<T extends Comparable<T>> {
 
 	private List<T> queueList ;
 	

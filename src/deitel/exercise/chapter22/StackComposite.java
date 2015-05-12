@@ -7,7 +7,7 @@ package deitel.exercise.chapter22;
  * @author mohammedtawsif
  *
  */
-public class StackComposite<T> {
+public class StackComposite<T extends Comparable<T>> {
 
 	private List<T> StackList ;
 	

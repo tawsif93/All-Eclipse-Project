@@ -1,6 +1,6 @@
 package deitel.exercise.chapter22;
 
-public class StackInheritance<T> extends List<T>{
+public class StackInheritance<T extends Comparable<T>> extends List<T>{
 
 	
 	public StackInheritance() {

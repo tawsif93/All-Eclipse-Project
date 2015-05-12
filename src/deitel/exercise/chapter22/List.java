@@ -1,6 +1,6 @@
 package deitel.exercise.chapter22;
 
-public class List <T>{
+public class List <T extends Comparable<T>>{
 
 	private ListNode<T> lastNode ;
 	private ListNode<T> firstNode ;
@@ -33,6 +33,54 @@ public class List <T>{
 			lastNode = lastNode.nextNode = new ListNode<T>(insertItem	);
 	}
 
+	public void insertOrder(T element) {
+		
+		
+		if(firstNode == null )
+		{
+			firstNode= lastNode = new ListNode<T>(element);
+			return ;
+		}
+		
+		else if(element.compareTo(firstNode.data)< 0)
+		{
+			insertAtTheFront(element);
+			return ;
+		}
+		else if (element.compareTo(lastNode.data) >= 0 )
+		{
+			insertAtTheBack(element);
+			return;
+		}
+		
+		ListNode<T> current = firstNode; 
+		
+		while(current != lastNode )
+		{
+			if(element.compareTo(current.getNextNode().data) <= 0 )
+			{
+				current.nextNode = new ListNode<T>(element, current.getNextNode());
+				return ;
+			}
+			else 
+				current = current.getNextNode();
+		}
+	}
+	
+	public void mergeSortList(List<T> secondList )
+	{
+		try
+		{
+			while(true)
+			{
+				this.insertOrder(secondList.removeFromFront());
+			}
+		}catch (EmptyListException exception)
+		{
+			return  ;
+		}
+	}
+	
 	public T removeFromFront() throws EmptyListException
 	{
 		if(isEmpty())
@@ -99,12 +147,9 @@ public class List <T>{
 
 		return false;
 	}
-
-
-
 }
 
-class ListNode <T>{
+class ListNode <T extends Comparable<T>>{
 
 	T data ;
 
@@ -124,11 +169,6 @@ class ListNode <T>{
 
 	public ListNode<T> getNextNode() {
 		return nextNode;
-	}
-
-
-	public void setData(T data) {
-		this.data = data;
 	}
 
 }
