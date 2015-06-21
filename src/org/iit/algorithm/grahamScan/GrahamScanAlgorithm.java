@@ -43,9 +43,9 @@ public class GrahamScanAlgorithm {
 		int value = ((q.y - p.y) * (r.x - q.x)) - ((q.x - p.x) * (r.y - q.y)) ;
 
 		if (value == 0)
-			return 0 ; // colinear
-
-		return (value > 0) ? 1 : 2 ; // clock or counterclock wise
+			return 0 ; 
+		// clock or counterclock wise
+		return (value > 0) ? 1 : 2 ; 
 	}
 
 	public static void ConvexHull( ArrayList< Point> points ) {
