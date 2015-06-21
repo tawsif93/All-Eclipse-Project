@@ -23,7 +23,7 @@ public class QuickHullTest {
 		QuickHullAlgorithm quickHull = new QuickHullAlgorithm(points) ;
 
 		for (Point p : quickHull.ConvexHull)
-			System.out.println("(" + p.x + ", " + p.y + ")") ;
+			System.out.println(p.x + " " + p.y ) ;
 
 	}
 
